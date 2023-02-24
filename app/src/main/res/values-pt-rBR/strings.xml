@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_phrase">Nova Frase</string>
+    <string name="motivation">Motivação</string>
+    <string name="hello">Olá</string>
+    <string name="lets_begin">Vamos começar?</string>
+    <string name="what_is_your_name">Qual o seu nome?</string>
+    <string name="save">Save</string>
+
+    <string name="validation_mandatory_name">Por favor preencha seu nome!</string>
+</resources>
