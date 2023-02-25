@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CappuccinoActivity">
+
+    <View
+        android:id="@+id/view_title"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#855E53"
+        />
+
+    <ImageView
+        android:id="@+id/img_arrow_back"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="#fff"
+        />
+
+    <TextView
+        android:id="@+id/text_cappuccino"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cappuccino"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/view_title"
+        />
+
+    <ImageView
+        android:id="@+id/img_clock"
+        android:src="@drawable/ic_clock"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="8dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/view_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_favorite"
+        app:tint="#855E53"
+        />
+
+    <ImageView
+        android:id="@+id/img_favorite"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_favorite"
+        app:layout_constraintStart_toEndOf="@id/img_clock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_title"
+        app:tint="#855E53"
+        />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="15 minutos"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:textColor="#855E53"
+        app:layout_constraintTop_toBottomOf="@id/img_clock"
+        app:layout_constraintStart_toStartOf="@id/img_clock"
+        app:layout_constraintEnd_toEndOf="@id/img_clock"
+        />
+
+    <TextView
+        android:id="@+id/text_favorite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1.500.000"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:textColor="#855E53"
+        app:layout_constraintTop_toBottomOf="@id/img_favorite"
+        app:layout_constraintStart_toStartOf="@id/img_favorite"
+        app:layout_constraintEnd_toEndOf="@id/img_favorite"
+        />
+
+    <View
+        android:id="@+id/view_separator_1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#855E53"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_time"
+        />
+
+    <TextView
+        android:id="@+id/text_presentation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="Um café simples e perfeitamente ... perfeito!"
+        android:textSize="14sp"
+        android:textColor="#855E53"
+        app:layout_constraintTop_toBottomOf="@id/view_separator_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text_ingredients"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:text="Ingredientes"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text_presentation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_chevron_right_1"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/text_ingredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_ingredient_water"
+        app:layout_constraintBottom_toTopOf="@id/img_chevron_right_2"
+        app:tint="#855E53"
+        />
+
+    <TextView
+        android:id="@+id/text_ingredient_water"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="600ml de Água"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/img_chevron_right_1"
+        app:layout_constraintTop_toTopOf="@id/img_chevron_right_1"
+        app:layout_constraintBottom_toBottomOf="@id/img_chevron_right_1"
+        />
+
+    <ImageView
+        android:id="@+id/img_chevron_right_2"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/img_chevron_right_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_ingredient_coffee"
+        app:layout_constraintBottom_toTopOf="@id/img_chevron_right_3"
+        app:tint="#855E53"
+        />
+
+    <TextView
+        android:id="@+id/text_ingredient_coffee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="3 colheres de Café"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/img_chevron_right_2"
+        app:layout_constraintTop_toTopOf="@id/img_chevron_right_2"
+        app:layout_constraintBottom_toBottomOf="@id/img_chevron_right_2"
+        />
+
+    <ImageView
+        android:id="@+id/img_chevron_right_3"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/img_chevron_right_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_ingredient_sugar"
+        app:layout_constraintBottom_toTopOf="@id/img_chevron_right_4"
+        app:tint="#855E53"
+        />
+
+    <TextView
+        android:id="@+id/text_ingredient_sugar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="3 colheres de Açucar"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/img_chevron_right_3"
+        app:layout_constraintTop_toTopOf="@id/img_chevron_right_3"
+        app:layout_constraintBottom_toBottomOf="@id/img_chevron_right_3"
+        />
+
+    <ImageView
+        android:id="@+id/img_chevron_right_4"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/img_chevron_right_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_ingredient_milk"
+        app:tint="#855E53"
+        />
+
+    <TextView
+        android:id="@+id/text_ingredient_milk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="1 litro de Leite"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/img_chevron_right_4"
+        app:layout_constraintTop_toTopOf="@id/img_chevron_right_4"
+        app:layout_constraintBottom_toBottomOf="@id/img_chevron_right_4"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

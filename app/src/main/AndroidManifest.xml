@@ -13,18 +13,22 @@
         android:theme="@style/Theme.Motivation"
         tools:targetApi="31">
         <activity
-            android:name=".ui.UserActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".ui.MainActivity"
-            android:exported="true"
-            android:screenOrientation="fullSensor">
+            android:name=".ui.CappuccinoActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
 
         <meta-data
             android:name="preloaded_fonts"
